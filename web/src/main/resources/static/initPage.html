@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Chat Program</title>
+    <meta name="description" content="심플 채팅 프로그램 예제">
+    <script src="/webjars/jquery/jquery.min.js"></script>
+    <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+    <script src="/init.js"></script>
+</head>
+<body>
+<div id="main-content" class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <form class="form-inline">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" class="form-control" placeholder="Your name here...">
+                    <label for="color">Color</label>
+                    <select>
+                        <optgroup label="Color" class="green">
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                            <option value="green">Green</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <form class="form-inline">
+                <div class="form-group">
+                    <button id="enter" class="btn btn-default" type="submit">Enter</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
